@@ -1,0 +1,62 @@
+$body-color: black;
+
+body {
+  color: $body-color;
+  font-family: sans-serif;
+}
+
+.c-window {
+  display: flex;
+  flex-wrap: wrap;
+  width: 75vh;
+  height: 75vh;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.c-top-left,
+.c-top-right,
+.c-bottom-left,
+.c-bottom-right {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  width: 50%;
+  height: 50%;
+  overflow: hidden;
+  background-color: black;
+}
+
+img, 
+video {
+  height: 100%;
+}
+
+img {
+  position: absolute;
+  opacity: 0;
+}
+
+.angry .c-top-right .e-angry,
+.angry .c-bottom-left .e-angry,
+.angry .c-bottom-right .e-angry,
+.disgusted .c-top-right .e-disgusted,
+.disgusted .c-bottom-left .e-disgusted,
+.disgusted .c-bottom-right .e-disgusted,
+.fearful .c-top-right .e-fearful,
+.fearful .c-bottom-left .e-fearful,
+.fearful .c-bottom-right .e-fearful,
+.happy .c-top-right .e-happy,
+.happy .c-bottom-left .e-happy,
+.happy .c-bottom-right .e-happy,
+.neutral .c-top-right .e-neutral,
+.neutral .c-bottom-left .e-neutral,
+.neutral .c-bottom-right .e-neutral,
+.sad .c-top-right .e-sad,
+.sad .c-bottom-left .e-sad,
+.sad .c-bottom-right .e-sad,
+.surprised .c-top-right .e-surprised,
+.surprised .c-bottom-left .e-surprised,
+.surprised .c-bottom-right .e-surprised {
+  opacity: 1;
+}
